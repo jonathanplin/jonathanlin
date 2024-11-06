@@ -105,7 +105,7 @@ header {
 
 /* Social links styling */
 .social-links {
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 /* Main Content */
@@ -134,12 +134,12 @@ footer {
 }
 
 .footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
 }
   
-  .footer-links a:hover {
-    text-decoration: underline;
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
