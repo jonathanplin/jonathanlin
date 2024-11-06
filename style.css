@@ -138,7 +138,6 @@ header {
   padding: 100px 20px;
   display: flex; /* Align photo and text side by side */
   align-items: center; /* Vertically align the items */
-  justify-content: flex-start;
 }
 
 .outdoors-pic {
