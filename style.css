@@ -111,14 +111,27 @@ header {
 /* Main Content */
 .home-section {
   padding: 100px 20px;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+}
+
+.intro {
+  display: flex;
+  justify-content: flex-start; /* Aligns photo and text */
+  align-items: center;
+  max-width: 1000px; /* Optional: Ensure content doesn’t stretch too far */
 }
 
 .profile-pic {
-  float: right;
   width: 200px;
   height: auto;
   border-radius: 50%;
   margin-left: 20px;
+}
+
+.bio {
+  max-width: 500px; /* Optional: Limit the width of the bio text */
+  margin-right: 20px; /* Move text closer to the center */
 }
 
 .skills, .references, .scroll-content {
