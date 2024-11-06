@@ -138,9 +138,10 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Aligns items at the top of the footer */
+  justify-content: flex-start; /* Align columns side by side */
+  align-items: flex-start;
   width: 100%;
+  gap: 50px; /* Space between the two columns */
 }
 
 .contact-info {
@@ -151,7 +152,6 @@ footer {
 .contact-links-column {
   display: flex;
   flex-direction: column;
-  margin-left: 100 px;
 }
 
 .contact-info p, .contact-links-column a {
@@ -163,4 +163,3 @@ footer {
 .contact-links-column a:hover {
   text-decoration: underline;
 }
-
