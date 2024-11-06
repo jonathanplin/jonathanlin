@@ -108,30 +108,27 @@ header {
   margin-top: 10px;
 }
 
-/* Main Content */
 /* Main Content Section */
 .home-section {
+  display: flex; /* Aligning photo and text side by side */
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 100px 20px;
-  display: flex; /* Using flexbox to align items */
-  justify-content: flex-start; /* Aligning content to the start (left side) */
-  align-items: flex-start; /* Aligning items to the top */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-/* Bio Section */
-.bio {
-  flex: 1 1 50%; /* Taking up 50% of the width and allowing flexibility */
-  max-width: 50%; /* Ensuring bio takes up 50% of the width */
-  padding-right: 20px; /* Padding between text and image */
-  box-sizing: border-box; /* Ensures padding is included in the width */
+/* Intro Section (Text) */
+.intro {
+  max-width: 50%; /* Text will take up to half of the screen width */
+  padding-right: 30px; /* Adds space between text and photo */
 }
 
-/* Profile Picture */
+/* Profile Photo */
 .profile-pic {
-  width: 200px; /* Setting width of the photo */
+  width: 200px; /* Set a fixed size for the photo */
   height: auto;
-  border-radius: 50%; /* Making the photo circular */
-  margin-left: 20px; /* Adding margin between photo and text */
-  flex: 0 0 200px; /* Fixing the photo size to 200px */
+  border-radius: 50%; /* Circular shape for the photo */
+  margin-left: 30px; /* Space between photo and text */
 }
 
 .skills, .references, .scroll-content {
