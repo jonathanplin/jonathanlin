@@ -10,6 +10,7 @@
     color: #333;
   }
   
+  /* Header Styling */
   header {
     position: fixed;
     top: 0;
@@ -23,6 +24,28 @@
     z-index: 100;
   }
   
+  .name-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pull-Out Navigation Menu */
   .menu-icon {
     font-size: 24px;
     cursor: pointer;
@@ -31,18 +54,31 @@
   .nav-menu {
     display: none;
     flex-direction: column;
+    background-color: #333;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    padding: 10px;
+    z-index: 100;
   }
   
-  .nav-menu a {
+  .nav-menu a, .social-links a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    display: block;
   }
   
-  .nav-menu a:hover {
+  .nav-menu a:hover, .social-links a:hover {
     background-color: #555;
   }
   
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
   .home-section {
     padding: 100px 20px;
   }
@@ -67,23 +103,10 @@
     text-align: center;
   }
   
-  .social-links li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  .contact-info, .faq, #contact-form {
-    margin-top: 10px;
-  }
-  
   /* Responsive Design */
   @media (min-width: 768px) {
     .nav-menu {
       display: flex;
       flex-direction: row;
-    }
-  
-    .scroll-content, .skills, .references {
-      margin-left: 220px;
     }
   }
