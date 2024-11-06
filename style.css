@@ -66,10 +66,10 @@ header {
   z-index: 200; /* Ensure it appears above other content */
   transform: translateX(-100%); /* Initially hidden, off-screen */
   transition: transform 0.3s ease; /* Smooth transition for sliding in */
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
   padding-left: 20px;
   visibility: hidden; /* Ensure menu is hidden initially */
+  display: flex;
+  flex-direction: column; /* Stack items vertically when open */
 }
 
 /* When the menu is open (slide in from the left) */
@@ -135,7 +135,6 @@ footer {
 /* Responsive Design */
 @media (min-width: 768px) {
   .nav-menu {
-    display: flex;
-    flex-direction: row;
+    display: none; /* Hide menu on larger screens */
   }
 }
