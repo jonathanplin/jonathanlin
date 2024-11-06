@@ -25,16 +25,20 @@
     z-index: 100;
   }
   
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
   .menu-icon {
     font-size: 24px;
     cursor: pointer;
+    margin-right: 10px;
   }
   
   .name {
     font-size: 1.5em;
     font-weight: bold;
-    flex-grow: 1;
-    text-align: center; /* Centering the name */
   }
   
   .main-nav a {
@@ -107,4 +111,3 @@
       flex-direction: row;
     }
   }
-  
