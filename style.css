@@ -143,24 +143,15 @@ header {
 }
 
 .outdoors-pic {
+  float: left;
   width: 300px;
   height: auto;
-  margin-right: 30px;
+  margin-right: 50px;
+  margin-left: 150px;
 }
 
 .aboutmetext {
   max-width: 600px; /* Restrict text width */
-}
-
-.aboutmetext h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.aboutmetext p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 20px;
 }
 
 /* Footer Styling */
