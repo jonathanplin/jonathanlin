@@ -119,11 +119,13 @@ header {
   width: 300px;
   height: auto;
   margin-right: 150px;
+  margin-left: 10px;
 }
 
 .bio, .skills, .references, .scroll-content {
   margin-top: 20px;
   margin-left: 150px;
+  margin-right: 10px;
 }
 
 /* Footer */
