@@ -115,23 +115,15 @@ header {
 
 .intro {
   display: flex;
-  justify-content: flex-start; /* Align photo and text */
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto; /* Centers the content */
+  justify-content: space-between; /* Keep photo on the right, text on the left */
 }
 
 .profile-pic {
+  float: right;
   width: 200px;
   height: auto;
   border-radius: 50%;
   margin-left: 20px;
-}
-
-.bio {
-  max-width: 500px;
-  margin-left: 20px; /* Adds some space between photo and text */
-  margin-right: 20px; /* This moves text closer to the center */
 }
 
 .skills, .references, .scroll-content {
