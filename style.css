@@ -36,7 +36,7 @@ header {
   cursor: pointer;
   margin-right: 10px;
   color: white;
-  z-index: 201; /* Ensure the hamburger button is on top of the nav menu */
+  z-index: 201; /* Ensure the hamburger button is above the nav menu */
 }
 
 .name {
