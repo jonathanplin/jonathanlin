@@ -118,12 +118,12 @@ header {
   float: right;
   width: 300px;
   height: auto;
-  margin-right: 200px;
+  margin-right: 150px;
 }
 
 .bio, .skills, .references, .scroll-content {
   margin-top: 20px;
-  margin-left: 200px;
+  margin-left: 150px;
 }
 
 /* Footer */
