@@ -9,6 +9,9 @@ body {
   font-family: Arial, sans-serif;
   color: #333;
   margin-top: 20px; /* Add space to prevent overlap with the fixed header */
+  display: flex;
+  flex-direction: column; /* Use column layout to stack content and footer */
+  min-height: 100vh; /* Ensure the page takes full height */
 }
 
 /* Header Styling */
@@ -113,6 +116,7 @@ header {
 /* Main Content */
 .home-section, .about-section {
   padding: 100px 20px;
+  flex-grow: 1; /* Ensure the content section grows to fill available space */
 }
 
 .profile-pic {
@@ -149,7 +153,7 @@ footer {
   color: white;
   padding: 20px;
   min-height: 100px;
-  margin-top: auto;
+  margin-top: auto; /* Push footer to the bottom of the page */
 }
 
 .footer-content {
