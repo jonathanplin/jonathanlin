@@ -133,6 +133,25 @@ header {
   margin-right: 50px;
 }
 
+/* About Section */
+.about-section {
+  padding: 100px 20px;
+  display: flex; /* Align photo and text side by side */
+  align-items: center; /* Vertically align the items */
+  flex-direction: row; /* Default row direction */
+}
+
+.outdoors-pic {
+  width: 300px; /* Set the photo width to 300px */
+  height: auto;
+  margin-right: 20px; /* Add space between the image and the text */
+}
+
+.about-me {
+  flex: 1; /* Allow text to take up the remaining space */
+  margin-left: 20px; /* Add some space to the left of the text */
+}
+
 /* Footer Styling */
 footer {
   background-color: #333;
