@@ -50,10 +50,10 @@
   .main-nav a:hover {
     text-decoration: underline;
   }
-  
+
   /* Pull-Out Navigation Menu */
   .nav-menu {
-    display: flex;
+    display: none; /* Hide by default */
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -62,16 +62,29 @@
     width: 250px; /* Width of the overlay menu */
     background-color: #333;
     color: white;
-    padding-top: 60px; /* Space for the header */
+    padding-top: 20px; /* Space for the header */
     z-index: 200; /* Ensure it appears above other content */
-    transform: translateX(-100%); /* Hide off-screen initially */
     transition: transform 0.3s ease; /* Smooth transition */
   }
   
   .nav-menu.open {
+    display: flex; /* Show when open */
     transform: translateX(0); /* Slide in on the left */
   }
+
+  /* Header inside the pull-out menu */
+  .menu-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
   
+  .menu-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Menu Links */
   .nav-menu a, .social-links a {
     color: white;
     text-decoration: none;
