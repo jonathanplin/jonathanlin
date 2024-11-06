@@ -136,22 +136,20 @@ header {
 /* About Section */
 
 .about-section {
+  display: flex;
+  padding: 50px 20px;
   justify-content: center;
   align-items: center;
 }
 
-.outdoors-pic {
-  float: left;
+.outdoors-photo {
   width: 300px;
   height: auto;
-  margin-right: 20px; 
-  margin-left: 100px;
+  margin-right: 30px;
 }
 
 .aboutmetext {
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 150px;
+  max-width: 600px; /* Restrict text width */
 }
 
 /* Footer Styling */
