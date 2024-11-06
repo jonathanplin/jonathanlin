@@ -34,6 +34,7 @@ header {
   font-size: 24px;
   cursor: pointer;
   margin-right: 10px;
+  color: white;
 }
 
 .name {
@@ -53,8 +54,6 @@ header {
 
 /* Pull-Out Navigation Menu */
 .nav-menu {
-  display: none; /* Hide by default */
-  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -62,17 +61,20 @@ header {
   width: 250px; /* Width of the overlay menu */
   background-color: #333;
   color: white;
-  padding-top: 20px; /* Space for the header */
+  padding-top: 20px;
   z-index: 200; /* Ensure it appears above other content */
-  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateX(-100%); /* Hide menu off-screen to the left */
+  transition: transform 0.3s ease; /* Smooth transition for sliding in */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
 }
 
+/* When the menu is open */
 .nav-menu.open {
-  display: flex; /* Show when open */
-  transform: translateX(0); /* Slide in on the left */
+  transform: translateX(0); /* Slide in from the left */
 }
 
-/* Header inside the pull-out menu */
+/* Menu header with name */
 .menu-header {
   text-align: center;
   margin-bottom: 20px;
@@ -84,18 +86,19 @@ header {
   color: white;
 }
 
-/* Menu Links */
+/* Menu links */
 .nav-menu a, .social-links a {
   color: white;
   text-decoration: none;
   padding: 15px;
-  display: block;
+  display: block; /* Ensure each item takes a full line */
 }
 
 .nav-menu a:hover, .social-links a:hover {
   background-color: #555;
 }
 
+/* Social links styling */
 .social-links {
   margin-top: 10px;
 }
