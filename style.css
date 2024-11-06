@@ -140,6 +140,7 @@ header {
   flex-direction: row;
   align-items: center; /* Vertically align the items */
   justify-content: flex-start;
+  width: 100%;
 }
 
 .outdoors-pic {
@@ -150,6 +151,7 @@ header {
 
 .aboutme {
   flex: 1; /* Allow text to take up the remaining space */
+  max-width: 70%;
 }
 
 /* Footer Styling */
