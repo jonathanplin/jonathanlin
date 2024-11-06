@@ -152,6 +152,7 @@ header {
 
 .aboutmetext {
   max-width: 600px; /* Restrict text width */
+  margin-right: 50px;
 }
 
 /* Footer Styling */
