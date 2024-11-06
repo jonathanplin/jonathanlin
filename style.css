@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  margin-top: 40px; /* Add space to prevent overlap with the fixed header */
+  margin-top: 20px; /* Add space to prevent overlap with the fixed header */
 }
 
 /* Header Styling */
