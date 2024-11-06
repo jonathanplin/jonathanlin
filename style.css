@@ -109,27 +109,30 @@ header {
 }
 
 /* Main Content */
+/* Main Content Section */
 .home-section {
   padding: 100px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: flex; /* Using flexbox to align items */
+  justify-content: flex-start; /* Aligning content to the start (left side) */
+  align-items: flex-start; /* Aligning items to the top */
+  flex-wrap: wrap; /* Ensuring content wraps on small screens */
 }
 
 /* Bio Section */
 .bio {
-  flex: 1; /* Take up remaining space */
-  max-width: 50%; /* Limit text width */
-  padding-right: 20px; /* Space between text and photo */
+  flex: 1 1 50%; /* Taking up 50% of the width and allowing flexibility */
+  max-width: 50%; /* Ensuring bio takes up 50% of the width */
+  padding-right: 20px; /* Padding between text and image */
+  box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
 /* Profile Picture */
 .profile-pic {
-  width: 200px;
+  width: 200px; /* Setting width of the photo */
   height: auto;
-  border-radius: 50%;
-  max-width: 100%;
-  /* Ensure photo stays responsive */
+  border-radius: 50%; /* Making the photo circular */
+  margin-left: 20px; /* Adding margin between photo and text */
+  flex: 0 0 200px; /* Fixing the photo size to 200px */
 }
 
 .skills, .references, .scroll-content {
