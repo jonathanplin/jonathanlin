@@ -155,7 +155,7 @@ footer {
   justify-content: flex-start; /* Align columns side by side */
   align-items: flex-start;
   width: 100%;
-  gap: 50px; /* Space between the two columns */
+  gap: 50px;
 }
 
 .contact-info {
