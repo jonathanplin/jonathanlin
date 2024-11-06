@@ -114,11 +114,10 @@ header {
 }
 
 .profile-pic {
-  float: right;
   width: 200px;
   height: auto;
   border-radius: 50%;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .skills, .references, .scroll-content {
