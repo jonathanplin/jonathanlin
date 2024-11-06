@@ -1,4 +1,4 @@
-/* Reset and Basic Styling */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +7,11 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   color: #333;
-  margin-top: 60px; /* Add space to prevent overlap with the fixed header */
 }
 
-/* Header Styling */
+/* Header Section */
 header {
   position: fixed;
   top: 0;
@@ -22,25 +22,25 @@ header {
   align-items: center;
   background-color: #333;
   padding: 10px;
-  color: white;
   z-index: 100;
 }
 
-.left-section {
+.header-left {
   display: flex;
   align-items: center;
 }
 
 .menu-icon {
-  font-size: 30px; /* Increased size of the hamburger icon */
+  font-size: 30px;
   cursor: pointer;
-  margin-right: 10px;
   color: white;
+  margin-right: 10px;
 }
 
 .name {
   font-size: 1.5em;
   font-weight: bold;
+  color: white;
 }
 
 .main-nav a {
@@ -58,27 +58,22 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  width: 250px;
   height: 100%;
-  width: 250px; /* Width of the overlay menu */
   background-color: #333;
   color: white;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  visibility: hidden;
+  flex-direction: column;
   padding-top: 20px;
-  z-index: 200; /* Ensure it appears above other content */
-  transform: translateX(-100%); /* Initially hidden, off-screen */
-  transition: transform 0.3s ease; /* Smooth transition for sliding in */
-  padding-left: 20px;
-  visibility: hidden; /* Ensure menu is hidden initially */
-  display: flex;
-  flex-direction: column; /* Stack items vertically when open */
 }
 
-/* When the menu is open (slide in from the left) */
 .nav-menu.open {
-  transform: translateX(0); /* Slide in from the left */
-  visibility: visible; /* Make it visible when opened */
+  transform: translateX(0);
+  visibility: visible;
 }
 
-/* Menu header with name */
 .menu-header {
   text-align: center;
   margin-bottom: 20px;
@@ -87,41 +82,59 @@ header {
 .menu-name {
   font-size: 1.8em;
   font-weight: bold;
-  color: white;
 }
 
-/* Menu links */
-.nav-menu a, .social-links a {
+.nav-menu a {
+  padding: 15px;
   color: white;
   text-decoration: none;
-  padding: 15px;
-  display: block; /* Ensure each item takes a full line */
+  display: block;
 }
 
-.nav-menu a:hover, .social-links a:hover {
+.nav-menu a:hover {
   background-color: #555;
 }
 
-/* Social links styling */
-.social-links {
-  margin-top: 10px;
+/* Social Links */
+.social-links a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
 }
 
-/* Main Content */
+.social-links a:hover {
+  background-color: #555;
+}
+
+/* Main Content Section */
 .home-section {
-  padding: 100px 20px;
+  padding-top: 80px;
+  padding: 20px;
 }
 
 .profile-pic {
-  float: right;
   width: 200px;
   height: auto;
   border-radius: 50%;
+  float: right;
   margin-left: 20px;
 }
 
-.skills, .references, .scroll-content {
-  margin-top: 20px;
+.bio h2 {
+  font-size: 1.8em;
+}
+
+.scroll-content ul {
+  list-style-type: none;
+}
+
+.scroll-content ul li {
+  margin-bottom: 5px;
+}
+
+.references {
+  margin-top: 30px;
 }
 
 /* Footer */
@@ -132,9 +145,46 @@ footer {
   text-align: center;
 }
 
+footer .contact-form input,
+footer .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+footer .contact-form button {
+  padding: 10px;
+  background-color: #555;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer .faq {
+  margin-top: 20px;
+}
+
+footer .faq ul {
+  list-style-type: none;
+}
+
+footer .faq li {
+  margin: 10px 0;
+}
+
 /* Responsive Design */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav-menu {
-    display: none; /* Hide menu on larger screens */
+    display: none;
+  }
+  
+  .main-nav {
+    display: block;
+  }
+  
+  .menu-icon {
+    display: none;
   }
 }

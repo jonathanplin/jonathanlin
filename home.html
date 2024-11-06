@@ -7,81 +7,91 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header with Name and Main Navigation -->
-  <header>
-    <div class="left-section">
-      <div class="menu-icon" onclick="toggleMenu()">☰</div>
-      <span class="name">Jonathan Lin</span>
-    </div>
-    <nav class="main-nav">
-      <a href="#home">Home</a>
-      <a href="#portfolio">Portfolio/Works</a>
-      <a href="#about">About Me</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <!-- Pull-Out Navigation Menu -->
-  <nav id="navMenu" class="nav-menu">
-    <div class="menu-header">
-      <span class="menu-name">Jonathan Lin</span>
-    </div>
+<!-- Header with Name and Main Navigation -->
+<header>
+  <div class="header-left">
+    <!-- Hamburger Icon for Navigation Menu -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <span class="name">Jonathan Lin</span>
+  </div>
+  <nav class="main-nav">
+    <a href="#home">Home</a>
     <a href="#portfolio">Portfolio/Works</a>
-    <a href="#skills">Skills</a>
-    <a href="#certifications">Certifications & Awards</a>
-    <a href="#resume">Resumes and CVs</a>
     <a href="#about">About Me</a>
     <a href="#contact">Contact</a>
-    <div class="social-links">
-      <a href="https://facebook.com">Facebook</a>
-      <a href="https://linkedin.com">LinkedIn</a>
-      <a href="https://twitter.com">Twitter</a>
-    </div>
   </nav>
+</header>
 
-  <!-- Main Content -->
-  <section id="home" class="home-section">
-    <div class="intro">
-      <img src="your-professional-photo.jpg" alt="Your Professional Picture" class="profile-pic">
-      <div class="bio">
-        <h1>Welcome to Jonathan Lin's Portfolio</h1>
-        <p>Brief biography and summary of achievements including education.</p>
-      </div>
-    </div>
-    <div class="scroll-content">
-      <h2>The Type of Person I Am</h2>
-      <p>Describe your personality and what you’re looking for in a job.</p>
-    </div>
-    <div class="skills">
-      <h2>Skills</h2>
-      <p>Summary of your professional skills.</p>
-    </div>
-    <div class="references">
-      <h2>Employer/Professor Reference</h2>
-      <p>References or testimonials.</p>
-    </div>
-  </section>
+<!-- Pull-Out Navigation Menu -->
+<nav id="navMenu" class="nav-menu">
+  <div class="menu-header">
+    <span class="menu-name">Jonathan Lin</span>
+  </div>
+  <a href="#portfolio">Portfolio/Works</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications & Awards</a>
+  <a href="#resume">Resumes and CVs</a>
+  <a href="#about">About Me</a>
+  <a href="#contact">Contact</a>
+  <div class="social-links">
+    <a href="https://facebook.com">Facebook</a>
+    <a href="https://linkedin.com">LinkedIn</a>
+    <a href="https://twitter.com">Twitter</a>
+  </div>
+</nav>
 
-  <!-- Footer with Contact Form and Social Links -->
-  <footer>
-    <div class="contact-info">
-      <p>Your Contact Details</p>
+<!-- Main Content Section -->
+<div id="home" class="home-section">
+  <div class="intro">
+    <img src="your-photo.jpg" alt="Jonathan Lin" class="profile-pic">
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>Hi! I'm Jonathan Lin, a passionate web developer with a background in Computer Science. I graduated from XYZ University with honors. I've worked on various web projects, including e-commerce sites, personal portfolios, and data-driven web apps.</p>
+      <p>I am looking for opportunities to work with innovative teams where I can contribute and grow as a full-stack developer.</p>
     </div>
-    <form id="contact-form" onsubmit="submitForm(event)">
-      <h3>Contact Me</h3>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  </div>
+  <div class="scroll-content">
+    <h3>Skills</h3>
+    <ul>
+      <li>JavaScript</li>
+      <li>HTML/CSS</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>MongoDB</li>
+      <li>Git/GitHub</li>
+    </ul>
+  </div>
+  <div class="references">
+    <h3>Employer/Professor References</h3>
+    <p>Professor John Doe, XYZ University, "Jonathan demonstrated excellent problem-solving skills in my advanced programming class."</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>Contact: jonathan@email.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <div class="contact-form">
+      <h4>Contact Me</h4>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
     <div class="faq">
-      <h3>FAQ</h3>
-      <p>Common questions and answers.</p>
+      <h4>FAQ</h4>
+      <ul>
+        <li><strong>Q:</strong> What technologies do you specialize in?</li>
+        <li><strong>A:</strong> I specialize in JavaScript, React, and Node.js, along with modern front-end and back-end technologies.</li>
+      </ul>
     </div>
-  </footer>
-  <script src="script.js" defer></script>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
