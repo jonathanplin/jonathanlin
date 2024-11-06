@@ -10,3 +10,10 @@ function toggleMenu() {
     alert("Thank you! Your message has been sent.");
     document.getElementById("contact-form").reset();
   }
+
+  // JavaScript function to toggle the navigation menu
+function toggleMenu() {
+    const navMenu = document.getElementById("navMenu");
+    navMenu.classList.toggle("open");
+  }
+  
