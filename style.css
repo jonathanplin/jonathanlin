@@ -111,16 +111,22 @@ header {
 /* Main Content */
 .home-section {
   padding: 100px 20px;
-  text-align: center; /* Center the text and image */
+  display: flex;
+  justify-content: flex-start; /* Ensure content aligns to the left */
+  align-items: center;
+}
+
+.bio {
+  max-width: 50%; /* Limit text width so it doesn't stretch too far */
 }
 
 .profile-pic {
-  display: inline-block; /* Ensures it behaves like an inline element */
   width: 200px;
   height: auto;
   border-radius: 50%;
-  margin-left: 10px; /* Adjust for centering */
+  margin-left: 20px; /* Move the image closer to the text */
 }
+
 
 .skills, .references, .scroll-content {
   margin-top: 20px;
