@@ -36,6 +36,7 @@ header {
   cursor: pointer;
   margin-right: 10px;
   color: white;
+  z-index: 201; /* Ensure the hamburger button is on top of the nav menu */
 }
 
 .name {
@@ -63,7 +64,7 @@ header {
   background-color: #333;
   color: white;
   padding-top: 20px;
-  z-index: 200; /* Ensure it appears above other content */
+  z-index: 200; /* Ensure it appears below the hamburger button */
   transform: translateX(-100%); /* Initially hidden, off-screen */
   transition: transform 0.3s ease; /* Smooth transition for sliding in */
   display: flex;
