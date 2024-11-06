@@ -153,7 +153,8 @@ header {
 .aboutmetext {
   margin-top: 20px;
   margin-left: 50px;
-  margin-right: 150px;
+  margin-right: 550px;
+  max-width: 70%;
 }
 
 /* Footer Styling */
