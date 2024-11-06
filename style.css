@@ -148,19 +148,19 @@ footer {
   flex-direction: column;
 }
 
-.footer-links {
+.contact-links-column {
   display: flex;
   flex-direction: column;
   margin-left: 100 px;
 }
 
-.contact-info p, .footer-links a {
+.contact-info p, .contact-links-column a {
   color: white;
   margin: 5px 0;
   text-decoration: none;
 }
 
-.footer-links a:hover {
+.contact-links-column a:hover {
   text-decoration: underline;
 }
 
