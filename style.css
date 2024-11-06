@@ -132,3 +132,14 @@ footer {
   padding: 20px;
   text-align: left;
 }
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+}
+
