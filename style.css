@@ -111,13 +111,15 @@ header {
 /* Main Content */
 .home-section {
   padding: 100px 20px;
+  text-align: center; /* Center the text and image */
 }
 
 .profile-pic {
+  display: inline-block; /* Ensures it behaves like an inline element */
   width: 200px;
   height: auto;
   border-radius: 50%;
-  margin-left: 1000px;
+  margin-left: 10px; /* Adjust for centering */
 }
 
 .skills, .references, .scroll-content {
