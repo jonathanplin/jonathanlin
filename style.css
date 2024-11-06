@@ -139,8 +139,8 @@ header {
   width: 300px; /* Set the photo width to 300px */
   height: auto;
   margin-right: 20px; /* Add space between the image and the text */
-  margin-top: 200px;
-  margin-left: 150;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 
 .aboutme {
