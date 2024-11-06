@@ -15,7 +15,7 @@ function toggleMenu() {
   }
 
 var navItems = [
-    { name: 'Home', link: 'home.html' },
+    { name: 'Home', link: 'index.html' },
     { name: 'Portfolio/Works', link: 'portfolio.html' },
     { name: 'Resumes and CVs', link: 'resume.html' },
     { name: 'Certifications & Awards', link: 'certifications.html' },
