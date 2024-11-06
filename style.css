@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset and Basic Styling */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +7,10 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   color: #333;
 }
 
-/* Header Section */
+/* Header Styling */
 header {
   position: fixed;
   top: 0;
@@ -22,26 +21,24 @@ header {
   align-items: center;
   background-color: #333;
   padding: 10px;
+  color: white;
   z-index: 100;
 }
 
-.header-left {
+.left-section {
   display: flex;
   align-items: center;
 }
 
 .menu-icon {
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
-  color: white;
   margin-right: 10px;
-  display: none; /* Hidden by default */
 }
 
 .name {
   font-size: 1.5em;
   font-weight: bold;
-  color: white;
 }
 
 .main-nav a {
@@ -56,25 +53,26 @@ header {
 
 /* Pull-Out Navigation Menu */
 .nav-menu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
   height: 100%;
+  width: 250px; /* Width of the overlay menu */
   background-color: #333;
   color: white;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  visibility: hidden;
-  flex-direction: column;
-  padding-top: 20px;
+  padding-top: 20px; /* Space for the header */
+  z-index: 200; /* Ensure it appears above other content */
+  transform: translateX(-100%); /* Hide off-screen initially */
+  transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .nav-menu.open {
-  transform: translateX(0);
-  visibility: visible;
+  transform: translateX(0); /* Slide in on the left */
 }
 
+/* Header inside the pull-out menu */
 .menu-header {
   text-align: center;
   margin-bottom: 20px;
@@ -83,59 +81,40 @@ header {
 .menu-name {
   font-size: 1.8em;
   font-weight: bold;
+  color: white;
 }
 
-.nav-menu a {
+/* Menu Links */
+.nav-menu a, .social-links a {
+  color: white;
+  text-decoration: none;
   padding: 15px;
-  color: white;
-  text-decoration: none;
   display: block;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover, .social-links a:hover {
   background-color: #555;
 }
 
-/* Social Links */
-.social-links a {
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  display: block;
+.social-links {
+  margin-top: 10px;
 }
 
-.social-links a:hover {
-  background-color: #555;
-}
-
-/* Main Content Section */
+/* Main Content */
 .home-section {
-  padding-top: 80px;
-  padding: 20px;
+  padding: 100px 20px;
 }
 
 .profile-pic {
+  float: right;
   width: 200px;
   height: auto;
   border-radius: 50%;
-  float: right;
   margin-left: 20px;
 }
 
-.bio h2 {
-  font-size: 1.8em;
-}
-
-.scroll-content ul {
-  list-style-type: none;
-}
-
-.scroll-content ul li {
-  margin-bottom: 5px;
-}
-
-.references {
-  margin-top: 30px;
+.skills, .references, .scroll-content {
+  margin-top: 20px;
 }
 
 /* Footer */
@@ -146,51 +125,10 @@ footer {
   text-align: center;
 }
 
-footer .contact-form input,
-footer .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-footer .contact-form button {
-  padding: 10px;
-  background-color: #555;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-footer .faq {
-  margin-top: 20px;
-}
-
-footer .faq ul {
-  list-style-type: none;
-}
-
-footer .faq li {
-  margin: 10px 0;
-}
-
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .nav-menu {
-    display: block;
-  }
-
-  .menu-icon {
-    display: block; /* Show hamburger icon on small screens */
-  }
-
-  .main-nav {
-    display: none; /* Hide top navigation on small screens */
-  }
-
-  .nav-menu a {
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
   }
 }
