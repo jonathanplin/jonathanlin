@@ -111,7 +111,7 @@ header {
 }
 
 /* Main Content */
-.home-section {
+.home-section, .about-section {
   padding: 100px 20px;
 }
 
@@ -135,6 +135,12 @@ header {
   margin-top: 20px;
   margin-left: 150px;
   margin-right: 50px;
+}
+
+.about-me {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 150px;
 }
 
 /* Footer Styling */
