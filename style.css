@@ -8,6 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
+  margin-top: 60px; /* Add space to prevent overlap with the fixed header */
 }
 
 /* Header Styling */
@@ -31,7 +32,7 @@ header {
 }
 
 .menu-icon {
-  font-size: 24px;
+  font-size: 30px; /* Increased size of the hamburger icon */
   cursor: pointer;
   margin-right: 10px;
   color: white;
@@ -63,13 +64,14 @@ header {
   color: white;
   padding-top: 20px;
   z-index: 200; /* Ensure it appears above other content */
-  transform: translateX(-100%); /* Hide menu off-screen to the left */
+  transform: translateX(-100%); /* Initially hidden, off-screen */
   transition: transform 0.3s ease; /* Smooth transition for sliding in */
   display: flex;
   flex-direction: column; /* Stack items vertically */
+  padding-left: 20px;
 }
 
-/* When the menu is open */
+/* When the menu is open (slide in from the left) */
 .nav-menu.open {
   transform: translateX(0); /* Slide in from the left */
 }
