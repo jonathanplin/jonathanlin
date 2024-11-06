@@ -120,6 +120,7 @@ header {
 .intro {
   max-width: 50%; /* Text will take up half of the screen */
   padding-right: 20px; /* Adds space between text and photo */
+  flex: 1; /* Ensures the text div takes up available space */
 }
 
 /* Profile Photo */
@@ -127,7 +128,9 @@ header {
   width: 200px; /* Set a fixed size for the photo */
   height: auto;
   border-radius: 50%; /* Circular shape for the photo */
+  flex-shrink: 0; /* Prevents photo from shrinking */
 }
+
 .skills, .references, .scroll-content {
   margin-top: 20px;
 }
