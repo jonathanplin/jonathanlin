@@ -1,0 +1,89 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    z-index: 100;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #555;
+  }
+  
+  .home-section {
+    padding: 100px 20px;
+  }
+  
+  .profile-pic {
+    float: right;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  
+  .skills, .references, .scroll-content {
+    margin-top: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .contact-info, .faq, #contact-form {
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .nav-menu {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .scroll-content, .skills, .references {
+      margin-left: 220px;
+    }
+  }
