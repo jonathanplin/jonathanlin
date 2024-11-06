@@ -111,15 +111,14 @@ header {
 /* Main Content */
 .home-section {
   padding: 100px 20px;
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
 }
 
 .intro {
   display: flex;
-  justify-content: flex-start; /* Aligns photo and text */
+  justify-content: flex-start; /* Align photo and text */
   align-items: center;
-  max-width: 1000px; /* Optional: Ensure content doesn’t stretch too far */
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the content */
 }
 
 .profile-pic {
@@ -130,8 +129,9 @@ header {
 }
 
 .bio {
-  max-width: 500px; /* Optional: Limit the width of the bio text */
-  margin-right: 20px; /* Move text closer to the center */
+  max-width: 500px;
+  margin-left: 20px; /* Adds some space between photo and text */
+  margin-right: 20px; /* This moves text closer to the center */
 }
 
 .skills, .references, .scroll-content {
