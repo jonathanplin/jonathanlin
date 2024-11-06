@@ -69,11 +69,13 @@ header {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   padding-left: 20px;
+  visibility: hidden; /* Ensure menu is hidden initially */
 }
 
 /* When the menu is open (slide in from the left) */
 .nav-menu.open {
   transform: translateX(0); /* Slide in from the left */
+  visibility: visible; /* Make it visible when opened */
 }
 
 /* Menu header with name */
