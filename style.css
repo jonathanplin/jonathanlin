@@ -147,7 +147,7 @@ header {
   margin-right: 20px; /* Add space between the image and the text */
 }
 
-.about-me {
+.aboutme {
   flex: 1; /* Allow text to take up the remaining space */
   margin-left: 20px; /* Add some space to the left of the text */
 }
