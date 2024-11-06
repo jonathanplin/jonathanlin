@@ -115,7 +115,6 @@ header {
   display: flex; /* Using flexbox to align items */
   justify-content: flex-start; /* Aligning content to the start (left side) */
   align-items: flex-start; /* Aligning items to the top */
-  flex-wrap: wrap; /* Ensuring content wraps on small screens */
 }
 
 /* Bio Section */
