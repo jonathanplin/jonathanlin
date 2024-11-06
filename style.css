@@ -115,9 +115,8 @@ header {
 
 .profile-pic {
   float: right;
-  width: 400px;
+  width: 250px;
   height: auto;
-  border-radius: 50%;
   margin-right: 200px;
 }
 
