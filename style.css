@@ -139,6 +139,7 @@ header {
 
 .aboutme {
   flex: auto;
+  flex-direction: column;
   margin-top: 20px;
   margin-left: 50px;
   margin-right: 150px;
