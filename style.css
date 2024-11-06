@@ -113,11 +113,6 @@ header {
   padding: 100px 20px;
 }
 
-.intro {
-  display: flex;
-  justify-content: space-between; /* Keep photo on the right, text on the left */
-}
-
 .profile-pic {
   float: right;
   width: 200px;
