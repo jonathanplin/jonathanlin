@@ -129,20 +129,32 @@ header {
   margin-right: 50px;
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
   background-color: #333;
   color: white;
   padding: 20px;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-  
+
+.contact-info, .footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info p, .footer-links a {
+  color: white;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
 .footer-links a:hover {
   text-decoration: underline;
 }
