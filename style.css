@@ -136,11 +136,7 @@ header {
 /* About Section */
 .about-section {
   padding: 100px 20px;
-  display: flex; /* Align photo and text side by side */
-  flex-direction: row;
-  align-items: center; /* Vertically align the items */
-  justify-content: flex-start;
-  width: 100%;
+  flex-grow: 1;
 }
 
 .outdoors-pic {
