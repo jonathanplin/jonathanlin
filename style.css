@@ -1,135 +1,134 @@
 /* Reset and Basic Styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  /* Header Styling */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    color: white;
-    z-index: 100;
-  }
-  
-  .left-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .name {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .main-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .main-nav a:hover {
-    text-decoration: underline;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Pull-Out Navigation Menu */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Pull-Out Navigation Menu */
+.nav-menu {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px; /* Width of the overlay menu */
+  background-color: #333;
+  color: white;
+  padding-top: 20px; /* Space for the header */
+  z-index: 200; /* Ensure it appears above other content */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.nav-menu.open {
+  display: flex; /* Show when open */
+  transform: translateX(0); /* Slide in on the left */
+}
+
+/* Header inside the pull-out menu */
+.menu-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+}
+
+/* Menu Links */
+.nav-menu a, .social-links a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.nav-menu a:hover, .social-links a:hover {
+  background-color: #555;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+/* Main Content */
+.home-section {
+  padding: 100px 20px;
+}
+
+.profile-pic {
+  float: right;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.skills, .references, .scroll-content {
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
   .nav-menu {
-    display: none; /* Hide by default */
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px; /* Width of the overlay menu */
-    background-color: #333;
-    color: white;
-    padding-top: 20px; /* Space for the header */
-    z-index: 200; /* Ensure it appears above other content */
-    transition: transform 0.3s ease; /* Smooth transition */
+    display: flex;
+    flex-direction: row;
   }
-  
-  .nav-menu.open {
-    display: flex; /* Show when open */
-    transform: translateX(0); /* Slide in on the left */
-  }
-
-  /* Header inside the pull-out menu */
-  .menu-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .menu-name {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: white;
-  }
-  
-  /* Menu Links */
-  .nav-menu a, .social-links a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-  }
-  
-  .nav-menu a:hover, .social-links a:hover {
-    background-color: #555;
-  }
-  
-  .social-links {
-    margin-top: 10px;
-  }
-  
-  /* Main Content */
-  .home-section {
-    padding: 100px 20px;
-  }
-  
-  .profile-pic {
-    float: right;
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-left: 20px;
-  }
-  
-  .skills, .references, .scroll-content {
-    margin-top: 20px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Responsive Design */
-  @media (min-width: 768px) {
-    .nav-menu {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  
+}
