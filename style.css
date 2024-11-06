@@ -123,13 +123,7 @@ header {
   margin-left: 50px;
 }
 
-.outdoors-pic {
-  float: left;
-  width: 300px;
-  height: auto;
-  margin-right: 50px;
-  margin-left: 150px;
-}
+
 
 .bio, .skills, .references, .scroll-content {
   margin-top: 20px;
