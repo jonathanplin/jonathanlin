@@ -134,28 +134,26 @@ footer {
   background-color: #333;
   color: white;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
-.contact-info, .footer-links {
+.contact-form-column,
+.contact-links-column {
   display: flex;
   flex-direction: column;
 }
 
-.contact-info p, .footer-links a {
+.contact-links-column a {
   color: white;
-  margin: 5px 0;
   text-decoration: none;
+  margin: 5px 0;
 }
 
-.footer-links a:hover {
+.contact-links-column a:hover {
   text-decoration: underline;
 }
 
