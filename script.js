@@ -13,3 +13,12 @@ function toggleMenu() {
       menuIcon.innerHTML = "&#9776;";  // Hamburger icon when menu is closed
     }
   }
+
+var navItems = [
+    { name: 'Home', link: 'home.html' },
+    { name: 'Portfolio/Works', link: 'portfolio.html' },
+    { name: 'Resumes and CVs', link: 'resume.html' },
+    { name: 'Certifications & Awards', link: 'certifications.html' },
+    { name: 'About Me', link: 'about.html' },
+    { name: 'Contact', link: 'contact.html' }
+];
