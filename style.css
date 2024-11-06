@@ -139,21 +139,22 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start; /* Aligns items at the top of the footer */
+  width: 100%;
 }
 
-.contact-form-column,
-.contact-links-column {
+.contact-info, .footer-links {
   display: flex;
   flex-direction: column;
 }
 
-.contact-links-column a {
+.contact-info p, .footer-links a {
   color: white;
-  text-decoration: none;
   margin: 5px 0;
+  text-decoration: none;
 }
 
-.contact-links-column a:hover {
+.footer-links a:hover {
   text-decoration: underline;
 }
 
