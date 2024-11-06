@@ -8,6 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
+  margin-top: 60px; /* Add space to prevent overlap with the fixed header */
 }
 
 /* Header Styling */
@@ -31,9 +32,10 @@ header {
 }
 
 .menu-icon {
-  font-size: 24px;
+  font-size: 30px; /* Increased size of the hamburger icon */
   cursor: pointer;
   margin-right: 10px;
+  color: white;
 }
 
 .name {
@@ -53,8 +55,6 @@ header {
 
 /* Pull-Out Navigation Menu */
 .nav-menu {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -62,17 +62,23 @@ header {
   width: 250px; /* Width of the overlay menu */
   background-color: #333;
   color: white;
-  padding-top: 20px; /* Space for the header */
+  padding-top: 20px;
   z-index: 200; /* Ensure it appears above other content */
-  transform: translateX(-100%); /* Hide off-screen initially */
-  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateX(-100%); /* Initially hidden, off-screen */
+  transition: transform 0.3s ease; /* Smooth transition for sliding in */
+  padding-left: 20px;
+  visibility: hidden; /* Ensure menu is hidden initially */
+  display: flex;
+  flex-direction: column; /* Stack items vertically when open */
 }
 
+/* When the menu is open (slide in from the left) */
 .nav-menu.open {
-  transform: translateX(0); /* Slide in on the left */
+  transform: translateX(0); /* Slide in from the left */
+  visibility: visible; /* Make it visible when opened */
 }
 
-/* Header inside the pull-out menu */
+/* Menu header with name */
 .menu-header {
   text-align: center;
   margin-bottom: 20px;
@@ -84,18 +90,19 @@ header {
   color: white;
 }
 
-/* Menu Links */
+/* Menu links */
 .nav-menu a, .social-links a {
   color: white;
   text-decoration: none;
   padding: 15px;
-  display: block;
+  display: block; /* Ensure each item takes a full line */
 }
 
 .nav-menu a:hover, .social-links a:hover {
   background-color: #555;
 }
 
+/* Social links styling */
 .social-links {
   margin-top: 10px;
 }
@@ -128,7 +135,6 @@ footer {
 /* Responsive Design */
 @media (min-width: 768px) {
   .nav-menu {
-    display: flex;
-    flex-direction: row;
+    display: none; /* Hide menu on larger screens */
   }
 }
