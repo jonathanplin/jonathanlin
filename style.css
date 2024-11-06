@@ -18,21 +18,23 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #333;
     padding: 10px;
     color: white;
     z-index: 100;
   }
   
-  .name-title {
-    display: flex;
-    align-items: center;
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
   }
   
   .name {
     font-size: 1.5em;
     font-weight: bold;
-    margin-right: 20px;
+    flex-grow: 1;
+    text-align: center; /* Centering the name */
   }
   
   .main-nav a {
@@ -46,11 +48,6 @@
   }
   
   /* Pull-Out Navigation Menu */
-  .menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -110,3 +107,4 @@
       flex-direction: row;
     }
   }
+  
