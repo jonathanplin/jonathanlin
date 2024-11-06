@@ -108,27 +108,17 @@ header {
   margin-top: 10px;
 }
 
-/* Home Section Layout */
+/* Main Content */
 .home-section {
-  display: flex; /* Aligning photo and text side by side */
-  justify-content: flex-start;
-  align-items: center; /* Center align vertically */
   padding: 100px 20px;
 }
 
-/* Intro Section (Text) */
-.intro {
-  max-width: 50%; /* Text will take up half of the screen */
-  padding-right: 20px; /* Adds space between text and photo */
-  flex: 1; /* Ensures the text div takes up available space */
-}
-
-/* Profile Photo */
 .profile-pic {
-  width: 200px; /* Set a fixed size for the photo */
+  float: right;
+  width: 200px;
   height: auto;
-  border-radius: 50%; /* Circular shape for the photo */
-  flex-shrink: 0; /* Prevents photo from shrinking */
+  border-radius: 50%;
+  margin-left: 20px;
 }
 
 .skills, .references, .scroll-content {
