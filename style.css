@@ -137,7 +137,9 @@ header {
 .about-section {
   padding: 100px 20px;
   display: flex; /* Align photo and text side by side */
+  flex-direction: row;
   align-items: center; /* Vertically align the items */
+  justify-content: flex-start;
 }
 
 .outdoors-pic {
@@ -148,7 +150,6 @@ header {
 
 .aboutme {
   flex: 1; /* Allow text to take up the remaining space */
-  margin-left: 20px; /* Add some space to the left of the text */
 }
 
 /* Footer Styling */
