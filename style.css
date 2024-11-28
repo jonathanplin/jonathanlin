@@ -361,6 +361,99 @@ div.resume-viewer,
   }
 }
 
+.certifications {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.cert-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cert-container h2 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.cert-item {
+  background: white;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.cert-header h3 {
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cert-header .institution {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.cert-header .description {
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.key-learnings h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.key-learnings ul {
+  padding-left: 1.5rem;
+}
+
+.key-learnings li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+.excel-levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.level h5 {
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cert-container {
+      padding: 0 1rem;
+  }
+
+  .cert-item {
+      padding: 1.5rem;
+  }
+
+  .cert-header h3 {
+      font-size: 1.5rem;
+  }
+
+  .excel-levels {
+      grid-template-columns: 1fr;
+  }
+}
+
 /* Footer Styling */
 footer {
   background-color: #333;
