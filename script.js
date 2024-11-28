@@ -22,3 +22,9 @@ var navItems = [
     { name: 'About Me', link: 'about.html' },
     { name: 'Contact', link: 'contact.html' }
 ];
+
+function handleSubmit(event) {
+    event.preventDefault();
+    alert("Your contact request form has been successfully submitted!");
+    document.getElementById("contactForm").reset();
+}
