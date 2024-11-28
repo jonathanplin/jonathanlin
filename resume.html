@@ -6,6 +6,7 @@
   <title>Resume and CVs</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <!-- Header with Name and Main Navigation -->
@@ -39,6 +40,29 @@
     </div>
   </nav>
 
+<!-- Resume Section -->
+<section class="resume-container">
+  <div class="resume-header">
+      <h2>My Resume</h2>
+      <a href="resume.pdf" download class="download-btn">
+          <i class="fas fa-download"></i> Download PDF
+      </a>
+  </div>
+  
+  <!-- Embedded PDF Viewer -->
+  <div class="resume-viewer">
+      <object
+          data="resume.pdf"
+          type="application/pdf"
+          width="100%"
+          height="800px">
+          <p>It appears you don't have a PDF plugin for this browser. 
+             You can <a href="resume.pdf">click here to download the PDF file.</a>
+          </p>
+      </object>
+  </div>
+</section>
+  
   <!-- Footer with Contact and Social Links -->
   <footer>
     <div class="footer-content">
