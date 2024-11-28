@@ -474,23 +474,24 @@ footer {
 
 .social-icons {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    top: 50%;          /* Center vertically */
+    right: 40px;       /* Distance from right edge */
+    transform: translateY(-50%);  /* Perfect vertical centering */
     display: flex;
-    gap: 15px;
+    gap: 25px;        /* Increased space between icons */
 }
 
 .social-icon {
-    color: #333;  /* or any color that matches your theme */
-    font-size: 24px;
-    transition: color 0.3s ease;
+    color: #ffffff;    /* White color for visibility on dark footer */
+    font-size: 32px;   /* Bigger icons */
+    transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #007bff;  /* or any hover color you prefer */
+    transform: scale(1.2);  /* Slight grow effect on hover */
 }
 
-/* Specific colors for each platform if desired */
+/* Platform-specific hover colors */
 .fa-linkedin:hover {
     color: #0077b5;
 }
@@ -509,6 +510,11 @@ footer {
         position: static;
         justify-content: center;
         margin-top: 20px;
+        transform: none;
+    }
+    
+    .social-icon {
+        font-size: 28px;  /* Slightly smaller on mobile */
     }
 }
 
