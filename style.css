@@ -461,6 +461,7 @@ footer {
   padding: 20px;
   min-height: 100px;
   margin-top: auto; /* Push footer to the bottom of the page */
+  position: relative;
 }
 
 .footer-content {
@@ -470,3 +471,44 @@ footer {
   width: 100%;
   gap: 50px;
 }
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #333;  /* or any color that matches your theme */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;  /* or any hover color you prefer */
+}
+
+/* Specific colors for each platform if desired */
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.fa-instagram:hover {
+    color: #e4405f;
+}
+
+.fa-facebook:hover {
+    color: #1877f2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-icons {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
