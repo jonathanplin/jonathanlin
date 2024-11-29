@@ -381,20 +381,6 @@ body .content .greeting h2 {
   line-height: 1.2;
 }
 
-.home-container img {
-  width: 400px;  /* Reduced from previous size */
-  height: auto;
-  max-width: 100%;  /* Ensures image is responsive */
-  border-radius: 50%;  /* Keep the circular shape if you had it */
-}
-
-/* Adjust for mobile */
-@media (max-width: 1024px) {
-  .home-container img {
-      width: 300px;  /* Slightly smaller on mobile */
-  }
-}
-
 /* About Section */
 
 .about-section {
@@ -1066,20 +1052,6 @@ footer {
 
 .social-icon:hover {
     transform: scale(1.2);
-}
-
-.profile-image {
-  width: 450px;
-  height: auto;
-  max-width: 100%;
-  justify-self: center;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 1024px) {
-  .profile-image {
-      width: 350px;
-  }
 }
 
 /* Platform-specific hover colors */
