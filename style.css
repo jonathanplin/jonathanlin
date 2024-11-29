@@ -377,7 +377,7 @@ header {
   width: 300px;
   height: auto;
   margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-bottom: 8px; /* Add margin to create space for caption */
 }
 
@@ -385,7 +385,7 @@ header {
   float: left;
   width: 300px;
   margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 20px;
   text-align: center; /* Center the caption under the photo */
 }
 
