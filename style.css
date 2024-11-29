@@ -267,15 +267,17 @@ header {
 .menu-icon {
   font-size: 30px;
   cursor: pointer;
-  margin-right: 20px;  /* Increased margin */
+  margin-right: 20px;
   color: white;
   z-index: 201;
-  padding: 10px;  /* Added padding for larger touch target */
-  min-width: 44px;  /* Minimum touch target width */
-  min-height: 44px;  /* Minimum touch target height */
+  padding: 10px;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;  /* Reset button background */
+  border: none;      /* Remove button border */
 }
 
 .name {
