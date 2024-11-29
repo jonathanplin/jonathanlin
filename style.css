@@ -956,7 +956,7 @@ div.resume-viewer,
 
 .greeting {
     font-size: 1.8rem;
-    color: #cccccc0e;  /* Light grey color */
+    color: #cccccceb;  /* Light grey color */
     margin-bottom: 1rem;
     animation: fadeInDown 1s ease;
 }
