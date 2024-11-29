@@ -554,7 +554,7 @@ div.resume-viewer,
 /* Portfolio/Works Section */
 .portfolio {
   background-color: #f8f9fa;
-  padding: 4rem 0;
+  padding: 6rem 0 4rem 0;
 }
 
 .portfolio-container {
@@ -1096,4 +1096,9 @@ footer {
 
 .section-heading {
     font-size: 4.5rem !important;
+}
+
+/* If needed, you can also add a general class for all main content sections */
+section {
+    padding-top: 80px;
 }
