@@ -671,6 +671,165 @@ div.resume-viewer,
   }
 }
 
+/* Education and Skills Section */
+.education-skills {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9ff 0%, #e6e9f0 100%);
+}
+
+/* Education Styling */
+.education-container {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+}
+
+.education-container h2 {
+    color: #2c3e50;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.education-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.school-info h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.program {
+    color: #3498db;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.duration {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.gpa {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.achievements {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievements li {
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.achievements li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+}
+
+/* Skills Styling */
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.skills-container h2 {
+    color: #2c3e50;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-skills {
+        padding: 3rem 0;
+    }
+
+    .education-container,
+    .skills-container {
+        padding: 0 1rem;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .school-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .program {
+        font-size: 1.1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* Footer Styling */
 footer {
   background-color: #333;
@@ -738,4 +897,3 @@ footer {
         font-size: 28px;
     }
 }
-
