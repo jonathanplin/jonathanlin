@@ -716,12 +716,12 @@ div.resume-viewer,
   z-index: 2;
 }
 
-.personal h1 {
-  font-size: 4.5rem;
-  margin-bottom: 1rem;
-  animation: fadeInDown 1s ease;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 700;
+.personal-content h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .personal h2 {
@@ -958,9 +958,9 @@ div.resume-viewer,
     margin-bottom: 1rem;
 }
 
-h1 {
+.home-text h1 {
     font-size: 3.5rem;
-    color: #ffffff;
+    color: #2c3e50;  /* Dark color/black */
     margin-bottom: 1rem;
     font-weight: 700;
 }
