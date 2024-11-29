@@ -1002,7 +1002,7 @@ div.resume-viewer,
 
 .home-text .greeting {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;  /* Increased space after greeting */
+    margin-bottom: 0.5rem;
 }
 
 .home-text h2 {
