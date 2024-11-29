@@ -13,7 +13,147 @@ body {
   min-height: 100vh;
 }
 
+/* Transition styling between sections */
+.welcome {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+}
 
+.welcome-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.welcome h2 {
+  color: #2c3e50;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.welcome h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  border-radius: 2px;
+}
+
+.welcome-content {
+  background: white;
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.welcome-content:hover {
+  transform: translateY(-5px);
+}
+
+.welcome-intro,
+.welcome-purpose,
+.welcome-invitation {
+  color: #4a4a4a;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-intro {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.welcome-invitation {
+  margin-bottom: 0;
+  color: #34495e;
+}
+
+/* Add subtle animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-content {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome {
+    padding: 3rem 0;
+  }
+
+  .welcome-container {
+    padding: 0 1rem;
+  }
+
+  .welcome h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .welcome-content {
+    padding: 1.5rem;
+  }
+
+  .welcome-intro,
+  .welcome-purpose,
+  .welcome-invitation {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .welcome-intro {
+    font-size: 1.1rem;
+  }
+}
+
+.summary {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e6e9f0 100%);
+  padding: 5rem 0;
+}
+
+.summary h2 {
+  color: #1a237e;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.welcome::after {
+  content: '';
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  height: 1px;
+  background: #e9ecef;
+  margin: 0 auto;
+}
+
+/* Ensure consistent container styling */
+.welcome-container,
+.summary-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 
 /* Summary of Qualifications */
 .qualifications {
