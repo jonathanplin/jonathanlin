@@ -454,6 +454,56 @@ div.resume-viewer,
   }
 }
 
+/* Personal Section Styling */
+.personal {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('path-to-your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.personal-content {
+  padding: 2rem;
+}
+
+.personal h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease;
+}
+
+.personal h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease;
+}
+
+.personal .tagline {
+  font-size: 1.5rem;
+  font-style: italic;
+  animation: fadeIn 2s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .personal h1 {
+      font-size: 3rem;
+  }
+  
+  .personal h2 {
+      font-size: 1.5rem;
+  }
+  
+  .personal .tagline {
+      font-size: 1.2rem;
+  }
+}
+
 /* Footer Styling */
 footer {
   background-color: #333;
@@ -474,21 +524,21 @@ footer {
 
 .social-icons {
     position: absolute;
-    top: 50%;          /* Center vertically */
-    right: 40px;       /* Distance from right edge */
-    transform: translateY(-50%);  /* Perfect vertical centering */
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
     display: flex;
-    gap: 25px;        /* Increased space between icons */
+    gap: 25px;
 }
 
 .social-icon {
-    color: #ffffff;    /* White color for visibility on dark footer */
-    font-size: 32px;   /* Bigger icons */
+    color: #ffffff;
+    font-size: 32px;
     transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.2);  /* Slight grow effect on hover */
+    transform: scale(1.2);
 }
 
 /* Platform-specific hover colors */
@@ -504,6 +554,10 @@ footer {
     color: #1877f2;
 }
 
+.fa-x-twitter:hover {
+    color: #1DA1F2;  /* X's brand color */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .social-icons {
@@ -514,7 +568,7 @@ footer {
     }
     
     .social-icon {
-        font-size: 28px;  /* Slightly smaller on mobile */
+        font-size: 28px;
     }
 }
 
