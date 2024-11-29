@@ -999,9 +999,10 @@ div.resume-viewer,
 }
 
 .greeting h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;  /* Increased from 2.5rem */
     margin-bottom: 1rem;
     color: #333;
+    font-weight: bold;  /* Optional: make it bolder */
 }
 
 .home-text h1 {
