@@ -999,10 +999,10 @@ div.resume-viewer,
 }
 
 .greeting h2 {
-    font-size: 20.5rem;  /* Increased from 2.5rem */
+    font-size: 4.5rem;  /* Made even larger */
     margin-bottom: 1rem;
     color: #333;
-    font-weight: bold;  /* Optional: make it bolder */
+    font-weight: bold;
 }
 
 .home-text h1 {
@@ -1179,4 +1179,9 @@ footer {
 .left-section .name:hover {
   background-color: #555;
   border-radius: 4px;
+}
+
+/* If you have this class, make sure it's not overriding */
+.section-heading {
+    font-size: 4.5rem !important;  /* Use !important only if needed */
 }
