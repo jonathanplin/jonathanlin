@@ -75,36 +75,77 @@ body {
   padding: 0 2rem;
 }
 
-/* Maintain existing qualification items styling */
+/* Summary of Qualifications */
 .qualifications {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .qualification-item {
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.qualification-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    background: white;
+    padding: 2.5rem;  /* Increased padding for more space */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .qualification-item i {
-  font-size: 2.5rem;
-  background: linear-gradient(45deg, #2c3e50, #3498db);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1.5rem;
-  display: block;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.qualification-item p {
+    color: #4a4a4a;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    position: relative;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 2px solid #f0f0f0;
+    text-align: left;
+    /* Remove any max-height constraints */
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .qualifications {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .qualifications {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+        gap: 1.5rem;
+    }
+    
+    .qualification-item {
+        padding: 1.5rem;
+    }
+}
+
+/* Optional: Add smooth transition for text */
+.qualification-item p {
+    transition: all 0.3s ease;
+}
+
+/* Ensure text remains readable on hover */
+.qualification-item:hover p {
+    color: #2c3e50;
 }
 
 /* Responsive adjustments */
