@@ -372,6 +372,15 @@ header {
   margin-right: 50px;
 }
 
+body .content .greeting h2 {
+  font-size: 6rem !important;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
 /* About Section */
 
 .about-section {
