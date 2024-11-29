@@ -1002,7 +1002,30 @@ div.resume-viewer,
 
 .home-text .greeting {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;  /* Increased space after greeting */
+}
+
+.home-text h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.home-text h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    color: #444;
+}
+
+/* Remove margin from last paragraph to avoid extra space at bottom */
+.home-text p:last-child {
+    margin-bottom: 0;
 }
 
 /* Mobile responsiveness */
