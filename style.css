@@ -374,7 +374,7 @@ header {
 
 .outdoors-pic {
   float: left;
-  width: 300px;
+  width: 100%;
   height: auto;
   margin-right: 50px;
   margin-left: 20px;
@@ -400,6 +400,7 @@ header {
   margin-top: 8px;
   font-style: italic;
   color: #666;
+  width: 100%;
 }
 
 /* Contact Section */
