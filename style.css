@@ -378,6 +378,15 @@ header {
   height: auto;
   margin-right: 50px;
   margin-left: 50px;
+  margin-bottom: 8px; /* Add margin to create space for caption */
+}
+
+.photo-container {
+  float: left;
+  width: 300px;
+  margin-right: 50px;
+  margin-left: 50px;
+  text-align: center; /* Center the caption under the photo */
 }
 
 .aboutmetext {
@@ -386,6 +395,14 @@ header {
   margin-right: 50px;
 }
 
+.photo-caption {
+  text-align: center;
+  margin-top: 8px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Contact Section */
 
 .contact-info {
   display: flex;
@@ -452,6 +469,8 @@ header {
     background-color: #0056b3;
 }
 
+/* Resume Section */
+
 body .resume-container,
 div.resume-container,
 .resume-container {
@@ -513,6 +532,7 @@ div.resume-viewer,
   }
 }
 
+/* Portfolio/Works Section */
 .portfolio {
   background-color: #f8f9fa;
   padding: 4rem 0;
