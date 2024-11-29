@@ -992,12 +992,20 @@ div.resume-viewer,
 
 .home-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
+}
+
+.home-container img {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+    justify-self: center;
 }
 
 .home-content {
