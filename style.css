@@ -384,6 +384,7 @@ body .content .greeting h2 {
 
 .about-section {
   padding: 100px 20px;
+  padding-top: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
