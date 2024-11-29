@@ -1013,38 +1013,30 @@ div.resume-viewer,
 }
 
 .home-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;  /* Adjust ratio between text and image */
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.home-text {
     text-align: left;
 }
 
-.home-content h2 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.home-content h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #666;
-}
-
-.home-content p {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: #444;
-}
-
-.title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #333;
+.profile-image {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+    justify-self: center;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 1024px) {
-    .home-container {
+    .home-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
