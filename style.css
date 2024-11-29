@@ -686,33 +686,31 @@ div.resume-viewer,
 
 /* Personal/Header Section */
 .personal {
-  background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(0, 18, 83, 0.9));
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
-  overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);  /* Black to grey gradient */
+    position: relative;
+    overflow: hidden;
 }
 
+/* Optional: Add subtle texture overlay */
 .personal::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgba(0, 123, 255, 0.15) 25%, transparent 25%),
-              linear-gradient(-45deg, rgba(0, 123, 255, 0.15) 25%, transparent 25%);
-  background-size: 60px 60px;
-  animation: moveBackground 20s linear infinite;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.03) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255, 255, 255, 0.03) 25%, transparent 25%);
+    background-size: 60px 60px;
+    animation: moveBackground 20s linear infinite;
+    opacity: 0.3;
 }
 
 .personal-content {
-  padding: 2rem;
-  position: relative;
-  z-index: 2;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .personal-content h1 {
@@ -720,23 +718,15 @@ div.resume-viewer,
     color: white;
     margin-bottom: 1rem;
     animation: fadeInDown 1s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.personal h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-  animation: fadeInUp 1s ease;
-  color: #e0e0ff;
+.personal-content h2 {
+    color: #e0e0e0;  /* Light grey */
 }
 
 .personal .tagline {
-  font-size: 1.6rem;
-  font-style: italic;
-  animation: fadeIn 2s ease;
-  color: #b8c6ff;
-  max-width: 800px;
-  margin: 0 auto;
+    color: #cccccc;  /* Slightly darker grey */
 }
 
 /* Responsive Design */
