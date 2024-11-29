@@ -14,6 +14,67 @@ body {
   min-height: 100vh; /* Ensure the page takes full height */
 }
 
+/* Add this to your existing CSS */
+
+/* Transition styling between sections */
+.welcome {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
+
+.summary {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+  margin-top: -1px; /* Prevents any gaps between sections */
+}
+
+/* Optional: Add a subtle divider between sections */
+.welcome::after {
+  content: '';
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  height: 1px;
+  background: #e9ecef;
+  margin: 0 auto;
+}
+
+/* Ensure consistent container styling */
+.welcome-container,
+.summary-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Maintain existing qualification items styling */
+.qualifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.qualification-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome,
+  .summary {
+      padding: 3rem 0;
+  }
+  
+  .welcome-container,
+  .summary-container {
+      padding: 0 1rem;
+  }
+}
 /* Header Styling */
 header {
   position: fixed;
