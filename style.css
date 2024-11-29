@@ -689,9 +689,11 @@ div.resume-viewer,
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #000000 0%, #333333 100%);  /* Black to grey gradient */
+    justify-content: center;
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 /* Optional: Add subtle texture overlay */
@@ -711,6 +713,17 @@ div.resume-viewer,
     padding: 2rem;
     position: relative;
     z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-content h1,
+.personal-content h2,
+.personal-content .tagline {
+    text-align: center;
+    width: 100%;
 }
 
 .personal-content h1 {
