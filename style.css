@@ -832,13 +832,13 @@ div.resume-viewer,
 }
 
 .program {
-    color: #3498db;
+    color: #2563EB;  /* Changed from #3498db to a darker blue */
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
 
 .duration {
-    color: #7f8c8d;
+    color: #666666;  /* Changed from #7f8c8d to a darker gray */
     font-style: italic;
     margin-bottom: 1.5rem;
 }
