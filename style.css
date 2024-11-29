@@ -992,10 +992,12 @@ div.resume-viewer,
 }
 
 .greeting h2 {
-    font-size: 6rem !important;
-    margin-bottom: 1rem !important;
-    color: #333 !important;
-    font-weight: bold !important;
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .home-text h1 {
