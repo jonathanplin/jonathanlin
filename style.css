@@ -8,13 +8,10 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  margin-top: 20px; /* Add space to prevent overlap with the fixed header */
-  display: flex;
-  flex-direction: column; /* Use column layout to stack content and footer */
-  min-height: 100vh; /* Ensure the page takes full height */
+  margin-top: 20px;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-/* Add this to your existing CSS */
 
 /* Transition styling between sections */
 .welcome {
@@ -169,7 +166,7 @@ body {
 
 .qualification-item {
     background: white;
-    padding: 2.5rem;  /* Increased padding for more space */
+    padding: 2.5rem;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -200,20 +197,19 @@ body {
     margin-top: 1.5rem;
     border-top: 2px solid #f0f0f0;
     text-align: left;
-    /* Remove any max-height constraints */
     height: auto;
 }
 
 /* Responsive Design */
 @media (max-width: 1400px) {
     .qualifications {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .qualifications {
-        grid-template-columns: 1fr; /* 1 column on mobile */
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
     
@@ -254,9 +250,9 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  padding: 15px 20px;  /* Increased padding */
+  padding: 15px 20px;
   color: white;
-  z-index: 150;  /* Increased z-index to be higher than nav-menu */
+  z-index: 150;
 }
 
 .left-section {
@@ -276,8 +272,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: none;  /* Reset button background */
-  border: none;      /* Remove button border */
+  background: none;
+  border: none;
 }
 
 .name {
@@ -306,8 +302,7 @@ header {
 .nav-menu {
   position: fixed;
   top: 0;
-  padding-top: 80px;  /* Added padding to account for header height */
-  left: 0;
+  padding-top: 80px;
   height: 100%;
   width: 250px;
   background-color: #333;
@@ -323,8 +318,8 @@ header {
 
 /* When the menu is open (slide in from the left) */
 .nav-menu.open {
-  transform: translateX(0); /* Slide in from the left */
-  visibility: visible; /* Make it visible when opened */
+  transform: translateX(0);
+  visibility: visible;
 }
 
 /* Menu header with name */
@@ -344,7 +339,7 @@ header {
   color: white;
   text-decoration: none;
   padding: 15px;
-  display: block; /* Ensure each item takes a full line */
+  display: block;
 }
 
 .nav-menu a:hover, .social-links a:hover {
@@ -360,7 +355,7 @@ header {
 /* Main Content */
 .home-section {
   padding: 100px 20px;
-  flex-grow: 1; /* Ensure the content section grows to fill available space */
+  flex-grow: 1;
 }
 
 .profile-pic {
@@ -392,7 +387,7 @@ header {
   height: auto;
   margin-right: 50px;
   margin-left: 50px;
-  margin-bottom: 8px; /* Add margin to create space for caption */
+  margin-bottom: 8px;
 }
 
 .photo-container {
@@ -400,9 +395,9 @@ header {
   width: 300px;
   margin-right: 50px;
   margin-left: 50px;
-  display: flex;  /* Add flex display */
-  flex-direction: column;  /* Stack items vertically */
-  align-items: center;  /* Center items horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutmetext {
@@ -507,7 +502,6 @@ div.resume-viewer,
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Make sure the object tag inside resume-viewer is also full width */
 .resume-viewer object {
     width: 100% !important;
     height: 100% !important;
@@ -545,7 +539,7 @@ div.resume-viewer,
   }
   
   .resume-viewer {
-      height: 500px; /* Shorter height for mobile */
+      height: 500px;
   }
 }
 
@@ -733,7 +727,6 @@ div.resume-viewer,
     text-align: center;
 }
 
-/* Optional: Add subtle texture overlay */
 .personal::before {
     content: '';
     position: absolute;
@@ -772,11 +765,11 @@ div.resume-viewer,
 }
 
 .personal-content h2 {
-    color: #e0e0e0;  /* Light grey */
+    color: #e0e0e0;
 }
 
 .personal .tagline {
-    color: #cccccc;  /* Slightly darker grey */
+    color: #cccccc;
 }
 
 /* Responsive Design */
@@ -834,13 +827,13 @@ div.resume-viewer,
 }
 
 .program {
-    color: #2563EB;  /* Changed from #3498db to a darker blue */
+    color: #2563EB;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
 
 .duration {
-    color: #666666;  /* Changed from #7f8c8d to a darker gray */
+    color: #666666;
     font-style: italic;
     margin-bottom: 1.5rem;
 }
@@ -993,13 +986,13 @@ div.resume-viewer,
 
 .greeting {
     font-size: 1.8rem;
-    color: #8d8d8d;  /* Light grey color */
+    color: #8d8d8d;
     margin-bottom: 1rem;
     animation: fadeInDown 1s ease;
 }
 
 .greeting h2 {
-    font-size: 4.5rem;  /* Made even larger */
+    font-size: 4.5rem; 
     margin-bottom: 1rem;
     color: #333;
     font-weight: bold;
@@ -1127,13 +1120,13 @@ footer {
   color: white;
   padding: 20px;
   min-height: 100px;
-  margin-top: auto; /* Push footer to the bottom of the page */
+  margin-top: auto;
   position: relative;
 }
 
 .footer-content {
   display: flex;
-  justify-content: flex-start; /* Align columns side by side */
+  justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   gap: 50px;
@@ -1172,16 +1165,14 @@ footer {
 }
 
 .fa-x-twitter:hover {
-    color: #1DA1F2;  /* X's brand color */
+    color: #1DA1F2;  
 }
 
-/* Optional: Also add hover effect for the name link */
 .left-section .name:hover {
   background-color: #555;
   border-radius: 4px;
 }
 
-/* If you have this class, make sure it's not overriding */
 .section-heading {
-    font-size: 4.5rem !important;  /* Use !important only if needed */
+    font-size: 4.5rem !important;
 }
