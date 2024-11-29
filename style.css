@@ -913,6 +913,166 @@ div.resume-viewer,
     }
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-icons {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+        transform: none;
+    }
+    
+    .social-icon {
+        font-size: 28px;
+    }
+}
+
+.home {
+    min-height: 100vh;
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9ff 0%, #e6e9f0 100%);
+    display: flex;
+    align-items: center;
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.home-text {
+    animation: fadeIn 1s ease-out;
+}
+
+.greeting {
+    font-size: 1.8rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.description p {
+    color: #4a4a4a;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-image {
+    position: relative;
+    animation: fadeIn 1s ease-out 0.3s;
+    animation-fill-mode: both;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: translateY(-5px);
+}
+
+/* Add decorative element behind image */
+.home-image::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    z-index: -1;
+    opacity: 0.1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .home-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .home-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .description {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 4rem 0;
+    }
+
+    .home-container {
+        padding: 0 1.5rem;
+    }
+
+    .greeting {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .description p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
 
 /* Footer Styling */
 footer {
@@ -966,18 +1126,4 @@ footer {
 
 .fa-x-twitter:hover {
     color: #1DA1F2;  /* X's brand color */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .social-icons {
-        position: static;
-        justify-content: center;
-        margin-top: 20px;
-        transform: none;
-    }
-    
-    .social-icon {
-        font-size: 28px;
-    }
 }
