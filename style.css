@@ -1007,12 +1007,12 @@ div.resume-viewer,
 
 .home-text h2 {
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .home-text h3 {
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: #666;
 }
 
@@ -1021,11 +1021,6 @@ div.resume-viewer,
     line-height: 1.8;
     margin-bottom: 2.5rem;
     color: #444;
-}
-
-/* Remove margin from last paragraph to avoid extra space at bottom */
-.home-text p:last-child {
-    margin-bottom: 0;
 }
 
 /* Mobile responsiveness */
