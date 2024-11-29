@@ -1097,8 +1097,3 @@ footer {
 .section-heading {
     font-size: 4.5rem !important;
 }
-
-/* If needed, you can also add a general class for all main content sections */
-section {
-    padding-top: 120px;
-}
