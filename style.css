@@ -686,8 +686,7 @@ div.resume-viewer,
 
 /* Personal/Header Section */
 .personal {
-  background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(0, 18, 83, 0.9))
-  background-size: cover;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(0, 18, 83, 0.9));
   background-position: center;
   height: 100vh;
   display: flex;
