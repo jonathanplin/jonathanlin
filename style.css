@@ -992,12 +992,16 @@ div.resume-viewer,
 
 .home-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;  /* Equal columns */
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
+}
+
+.home-text {
+    text-align: left;
 }
 
 .home-image img {
@@ -1045,7 +1049,7 @@ div.resume-viewer,
         gap: 2rem;
     }
 
-    .home-content {
+    .home-text {
         text-align: center;
     }
 }
