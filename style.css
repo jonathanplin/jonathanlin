@@ -977,153 +977,69 @@ div.resume-viewer,
 }
 
 .home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.home-content {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 4rem;
     align-items: center;
 }
 
-.home-text {
-    animation: fadeIn 1s ease-out;
+.home-content {
+    text-align: left;
 }
 
-.greeting {
-    font-size: 1.8rem;
-    color: #8d8d8d;
+.home-content h2 {
+    font-size: 4rem;
     margin-bottom: 1rem;
-    animation: fadeInDown 1s ease;
-}
-
-.greeting h2 {
-    font-size: 6rem;
-    margin: 0;
-    padding: 0;
     color: #333;
-    font-weight: bold;
-    line-height: 1.2;
 }
 
-.home-text h1 {
-    font-size: 3.5rem;
-    color: #2c3e50;
+.home-content h3 {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    color: #666;
+}
+
+.home-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #444;
 }
 
 .title {
-    font-size: 1.4rem;
-    color: #34495e;
-    margin-bottom: 2rem;
-    line-height: 1.4;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
-.description p {
-    color: #4a4a4a;
-    line-height: 1.8;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-.home-image {
-    position: relative;
-    animation: fadeIn 1s ease-out 0.3s;
-    animation-fill-mode: both;
-}
-
-.profile-image {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-}
-
-.profile-image:hover {
-    transform: translateY(-5px);
-}
-
-/* Add decorative element behind image */
-.home-image::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: -20px;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background: linear-gradient(45deg, #3498db, #2c3e50);
-    z-index: -1;
-    opacity: 0.1;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design */
+/* Maintain responsiveness */
 @media (max-width: 1024px) {
-    .home-content {
+    .home-container {
         grid-template-columns: 1fr;
         gap: 3rem;
         text-align: center;
     }
 
-    .home-image {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-    h1 {
+    .home-content h2 {
         font-size: 3rem;
     }
 
-    .description {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .home {
-        padding: 4rem 0;
+    .home-content h3 {
+        font-size: 2rem;
     }
 
-    .home-container {
-        padding: 0 1.5rem;
-    }
-
-    .greeting {
-        font-size: 1.5rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
+    .home-content p {
+        font-size: 1.1rem;
     }
 
     .title {
-        font-size: 1.2rem;
-    }
-
-    .description p {
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 2.5rem;
     }
 }
-
 
 /* Footer Styling */
 footer {
