@@ -499,6 +499,7 @@ div.resume-container,
     width: 95% !important;
     margin: 2rem auto !important;
     padding: 1rem !important;
+    padding-top: 100px !important;
 }
 
 body .resume-viewer,
